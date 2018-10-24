@@ -1,0 +1,21 @@
+%!TeX TXS-program:bibliography = txs:///biber
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\usepackage[style=apa,backend=biber]{biblatex}
+\addbibresource{https://raw.githubusercontent.com/ncrncornell/cms-to-bib/master/cms.bib}
+\title{Sample data citation}
+\author{Future Nobel Prize}
+
+\begin{document}
+\maketitle
+We will use the Annual Survey of Manufactures {\color{red} \parencite{cms1}} to do something.
+
+\printbibliography	
+\end{document}
