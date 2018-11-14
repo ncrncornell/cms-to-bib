@@ -7,6 +7,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{listings}
 
 \usepackage[style=apa,backend=biber]{biblatex}
 \addbibresource{https://raw.githubusercontent.com/ncrncornell/cms-to-bib/master/cms.bib}
@@ -16,6 +17,26 @@
 \begin{document}
 \maketitle
 We will use the Annual Survey of Manufactures {\color{red} \parencite{cms1}} to do something.
+
+\section{Details}
+This sample \LaTeX document uses \texttt{biblatex} to pull down the \texttt{cms.bib} file. The key code is
+
+\begin{lstlisting}[language=TeX]
+\usepackage[style=apa,backend=biber]{biblatex}
+\addbibresource{https://raw.githubusercontent.com/ncrncornell/
+  cms-to-bib/master/cms.bib}
+\end{lstlisting}
+This will download the file from a website.
+
+\section{Caveats}
+\subsection{Might not work on Overleaf}
+There are reports that this code will not work on Overleaf, due to the remote-file download functionality. The workaround is to use the URL-upload facility on Overleaf to add the \texttt{cms.bib} to the Overleaf folder, and change the \texttt{addbibresource} line to read
+\begin{lstlisting}
+\addbibresource{cms.bib}
+\end{lstlisting}
+
+\subsection{Year reported says "release year"}
+The supplied bib file is just an example. In practice, it needs to be adapted either by the agency providing it or by the researcher using it. 
 
 \printbibliography	
 \end{document}
