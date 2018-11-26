@@ -1,7 +1,6 @@
 %!TeX TXS-program:bibliography = txs:///biber
 
 \documentclass[10pt,letterpaper]{article}
-\usepackage[latin1]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -10,7 +9,22 @@
 \usepackage{listings}
 
 \usepackage[style=apa,backend=biber]{biblatex}
+
+% the following lines are needed if using the APA style citations. May not be needed for other styles.
+\usepackage[american]{babel}
+\DeclareLanguageMapping{american}{american-apa}
+
+
+\usepackage[utf8]{inputenc}
+
+%
+% This is where you add the bib file. 
 \addbibresource{https://raw.githubusercontent.com/ncrncornell/cms-to-bib/master/cms.bib}
+% WARNING: on Overleaf, using remote bib resources does not work. You will need to add the file via the "Upload" menu 
+% Then comment out the lines above, and uncomment the line below.
+%\addbibresource{cms.bib}
+
+
 \title{Sample data citation}
 \author{Future Nobel Prize}
 
