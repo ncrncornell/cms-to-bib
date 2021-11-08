@@ -1,7 +1,7 @@
 # cms-to-bib
 
 This repository contains a bibliography (in Bibtex format) for all datasets provided by  the [Census Bureau](https://www.census.gov)
-to researchers in the [Federal Statitical Research Data Centers](https://www.census.gov/fsrdc), as of 2014.
+to researchers in the [Federal Statistical Research Data Centers](https://www.census.gov/fsrdc), as of 2014.
 
 This list does not claim to be exhaustive, nor is it being (actively) updated by the Census Bureau. It is provided as a utility to the community.
 
